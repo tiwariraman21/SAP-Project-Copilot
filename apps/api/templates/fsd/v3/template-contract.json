@@ -1,0 +1,195 @@
+{
+  "template_version": "fsd-master-v3",
+  "schema_version": "3.1.0",
+  "prompt_version": "3.1.0",
+  "renderer_version": "3.1.0",
+  "name": "FSD Master AI-Ready Template",
+  "minimum_screens": 1,
+  "sections": [
+    [
+      "1",
+      "Relevant Documents"
+    ],
+    [
+      "2",
+      "Process Scope"
+    ],
+    [
+      "3",
+      "Process Information"
+    ],
+    [
+      "4",
+      "Functional Specification"
+    ],
+    [
+      "5",
+      "Configuration"
+    ],
+    [
+      "6",
+      "Technical Elements of Enhancement"
+    ],
+    [
+      "7",
+      "Roles & Responsibilities"
+    ],
+    [
+      "8",
+      "Roles, Transaction Codes & Authorization Objects"
+    ],
+    [
+      "9",
+      "Test Conditions"
+    ],
+    [
+      "10",
+      "Related RICEFW Items"
+    ],
+    [
+      "11",
+      "Integration Points"
+    ],
+    [
+      "12",
+      "Open Points / Outstanding Issues & Omissions"
+    ],
+    [
+      "13",
+      "Group / Company Localization Requirements"
+    ],
+    [
+      "14",
+      "Risk / Vulnerability Assessment"
+    ],
+    [
+      "15",
+      "Optional Non-Functional Requirements"
+    ],
+    [
+      "16",
+      "Appendices"
+    ]
+  ],
+  "required_collections": [
+    "revision_history",
+    "sign_offs",
+    "relevant_documents",
+    "actors_and_systems",
+    "process_steps",
+    "requirements",
+    "screens",
+    "test_conditions",
+    "traceability",
+    "review_checklist"
+  ],
+  "content_limits": {
+    "process_steps": 12,
+    "business_rules": 20,
+    "screens": 10,
+    "screen_fields": 25,
+    "screen_actions": 10,
+    "flow_variants": 8,
+    "improvement_mappings": 10,
+    "processing_logic": 16,
+    "configuration_items": 20,
+    "technical_objects": 15,
+    "interfaces": 15,
+    "test_conditions": 30,
+    "risks": 10,
+    "open_issues": 12,
+    "data_mappings": 40,
+    "status_definitions": 40,
+    "message_catalog": 30,
+    "non_functional_requirements": 30
+  },
+  "branding": {
+    "classification_default": "INTERNAL",
+    "header_title": "SAP Functional Specification Template",
+    "primary_color": "17365D",
+    "accent_color": "C00000",
+    "detail_fill": "E2F0D9"
+  },
+  "section_sources": {
+    "1 Relevant Documents": [
+      "document_control",
+      "references"
+    ],
+    "2 Process Scope": [
+      "executive_summary",
+      "business_context",
+      "objectives",
+      "in_scope",
+      "out_of_scope",
+      "glossary"
+    ],
+    "3 Process Information": [
+      "current_state_challenges",
+      "desired_future_state",
+      "stakeholders",
+      "process_steps",
+      "data_ownership_rules"
+    ],
+    "4 Functional Specification": [
+      "business_requirements",
+      "business_rules",
+      "data_fields",
+      "status_definitions",
+      "messages",
+      "acceptance_criteria"
+    ],
+    "5 Configuration": [
+      "business_rules",
+      "status_definitions",
+      "open_questions"
+    ],
+    "6 Technical Elements of Enhancement": [
+      "integrations",
+      "data_fields",
+      "non_functional_requirements",
+      "dependencies"
+    ],
+    "7 Roles & Responsibilities": [
+      "stakeholders",
+      "role_principles"
+    ],
+    "8 Roles, Transaction Codes & Authorization Objects": [
+      "stakeholders",
+      "role_principles",
+      "data_fields"
+    ],
+    "9 Test Conditions": [
+      "acceptance_criteria",
+      "business_test_scenarios"
+    ],
+    "10 Related RICEFW Items": [
+      "integrations",
+      "business_requirements"
+    ],
+    "11 Integration Points": [
+      "integrations",
+      "data_ownership_rules"
+    ],
+    "12 Open Points / Outstanding Issues & Omissions": [
+      "open_questions",
+      "dependencies"
+    ],
+    "13 Group / Company Localization Requirements": [
+      "business_requirements",
+      "open_questions"
+    ],
+    "14 Risk / Vulnerability Assessment": [
+      "risks"
+    ],
+    "15 Optional Non-Functional Requirements": [
+      "non_functional_requirements"
+    ],
+    "16 Appendices": [
+      "data_fields",
+      "status_definitions",
+      "messages",
+      "glossary",
+      "references"
+    ]
+  }
+}

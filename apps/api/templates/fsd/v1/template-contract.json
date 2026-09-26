@@ -1,0 +1,44 @@
+{
+  "template_version": "fsd-v1",
+  "schema_version": "1.1.0",
+  "prompt_version": "1.1.0",
+  "renderer_version": "1.0.0",
+  "name": "Combined SAP FSD / FS03",
+  "minimum_screens": 2,
+  "sections": [
+    ["1", "Relevant Documents"],
+    ["2", "Process Scope"],
+    ["3", "Process Information and Future-State Design"],
+    ["4", "Functional Specification"],
+    ["5", "Screen Design and Navigation"],
+    ["6", "Configuration"],
+    ["7", "Technical Elements of Enhancement"],
+    ["8", "Interfaces and Integration"],
+    ["9", "Roles, Responsibilities, and Authorizations"],
+    ["10", "Test Conditions"],
+    ["11", "Requirement Traceability"],
+    ["12", "Related RICEFW Items"],
+    ["13", "Risk and Vulnerability Assessment"],
+    ["14", "Outstanding Issues and Omissions"],
+    ["15", "Localization Requirements"],
+    ["16", "Controls, Open Questions, and Review Checklist"]
+  ],
+  "required_collections": [
+    "revision_history",
+    "sign_offs",
+    "relevant_documents",
+    "actors_and_systems",
+    "process_steps",
+    "requirements",
+    "screens",
+    "test_conditions",
+    "traceability",
+    "review_checklist"
+  ],
+  "branding": {
+    "left_logo": "INFRABEAT",
+    "right_logo": "CLIENT",
+    "classification_default": "INTERNAL",
+    "header_title": "SAP Functional Specification"
+  }
+}

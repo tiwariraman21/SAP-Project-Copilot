@@ -1,0 +1,91 @@
+.analysisPanel {
+  display: grid;
+  gap: 10px;
+  background: #e8f3ed;
+  border: 1px solid #b9d8c8;
+  color: var(--green);
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.analysisHeading {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.analysisHeading > div {
+  display: grid;
+  flex: 1;
+}
+
+.analysisHeading small,
+.keepOpen {
+  color: #536b61;
+  font-weight: 400;
+}
+
+.analysisHeading > strong {
+  font: 700 19px Manrope, sans-serif;
+}
+
+.progressTrack {
+  height: 7px;
+  overflow: hidden;
+  background: #c9ddd3;
+  border-radius: 10px;
+}
+
+.progressTrack span {
+  display: block;
+  height: 100%;
+  min-width: 2%;
+  background: var(--green);
+  border-radius: inherit;
+  transition: width .35s ease;
+}
+
+.processConsole {
+  max-height: 220px;
+  overflow: auto;
+  background: #12211c;
+  color: #d9eee4;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font: 11px/1.45 Consolas, "Courier New", monospace;
+}
+
+.consoleTitle {
+  display: flex;
+  justify-content: space-between;
+  color: #72d2a6;
+  padding-bottom: 7px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #2d463d;
+  font-weight: 700;
+}
+
+.consoleLine {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 8px;
+  padding: 3px 0;
+}
+
+.consoleLine time { color: #78978a; }
+.consoleLine.warning span { color: #f0c979; }
+.consoleLine.error span { color: #ff9a87; }
+
+.spinner {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #a9cebc;
+  border-top-color: var(--green);
+  border-radius: 50%;
+  animation: analysis-spin .8s linear infinite;
+  flex: none;
+}
+
+@keyframes analysis-spin {
+  to { transform: rotate(360deg); }
+}

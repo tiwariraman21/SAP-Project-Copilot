@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 88" role="img" aria-labelledby="title desc">
+  <title id="title">InfraBeat</title>
+  <desc id="desc">Infra in cyan and Beat in red</desc>
+  <text x="4" y="68" font-family="Arial Narrow, Roboto Condensed, Arial, sans-serif" font-size="68" font-weight="700" letter-spacing="-3"><tspan fill="#05a9d6">Infra</tspan><tspan fill="#ed1c24">Beat</tspan></text>
+</svg>

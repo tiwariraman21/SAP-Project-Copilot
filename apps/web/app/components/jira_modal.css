@@ -1,0 +1,269 @@
+.jiraModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: jiraFadeIn 0.2s ease-out;
+}
+
+.jiraModalCard {
+  background: #ffffff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 640px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 82, 204, 0.25), 0 0 0 1px rgba(0, 82, 204, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.jiraModalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  background: linear-gradient(to right, #f8fafc, #f1f5f9);
+  border-radius: 16px 16px 0 0;
+}
+
+.jiraHeaderTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.jiraIconBox {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #0052cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.jiraModalBody {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.jiraTabs {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+  gap: 0.5rem;
+}
+
+.jiraTabBtn {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.jiraTabBtn.active {
+  color: #0052cc;
+  border-bottom-color: #0052cc;
+}
+
+.jiraFormGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.jiraFormGroup label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.jiraInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.jiraInput {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #0f172a;
+  background: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.jiraInput:focus {
+  outline: none;
+  border-color: #0052cc;
+  box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.15);
+}
+
+.jiraHelpText {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.jiraHelpLink {
+  color: #0052cc;
+  text-decoration: underline;
+}
+
+.jiraOptionsRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.jiraCheckboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: #334155;
+  cursor: pointer;
+}
+
+.jiraAlert {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.jiraAlert.success {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.jiraAlert.error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.jiraAlert.info {
+  background: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+
+.jiraSuccessCard {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+}
+
+.jiraStatsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.jiraStatBox {
+  background: #ffffff;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #dcfce7;
+}
+
+.jiraStatVal {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #15803d;
+}
+
+.jiraStatLbl {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.jiraModalFooter {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  background: #f8fafc;
+  border-radius: 0 0 16px 16px;
+}
+
+.jiraBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.jiraBtn.secondary {
+  background: #ffffff;
+  color: #334155;
+  border-color: #cbd5e1;
+}
+
+.jiraBtn.secondary:hover {
+  background: #f1f5f9;
+}
+
+.jiraBtn.test {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.jiraBtn.test:hover {
+  background: #cbd5e1;
+}
+
+.jiraBtn.primary {
+  background: #0052cc;
+  color: #ffffff;
+}
+
+.jiraBtn.primary:hover {
+  background: #0747a6;
+}
+
+.jiraBtn.primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@keyframes jiraFadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}

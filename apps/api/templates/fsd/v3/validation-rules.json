@@ -1,0 +1,10 @@
+{
+  "fail_on_schema_error": true,
+  "fail_on_missing_requirement": true,
+  "fail_on_unknown_requirement_reference": true,
+  "fail_on_missing_traceability": true,
+  "fail_on_missing_source_evidence": true,
+  "fail_on_ungrounded_design_record": true,
+  "warn_on_tbd": true,
+  "warn_on_empty_optional_sections": true
+}

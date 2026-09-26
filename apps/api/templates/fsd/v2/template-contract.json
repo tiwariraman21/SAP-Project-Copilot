@@ -1,0 +1,50 @@
+{
+  "template_version": "fsd-v2",
+  "schema_version": "2.0.0",
+  "prompt_version": "2.0.0",
+  "renderer_version": "2.0.0",
+  "name": "Combined SAP Business Process FSD / FS03",
+  "minimum_screens": 2,
+  "sections": [
+    ["1", "Relevant Documents"],
+    ["2", "Process Scope and Business Context"],
+    ["3", "Process Information and Solution Design"],
+    ["4", "Functional Specification"],
+    ["5", "Roles and Responsibilities"],
+    ["6", "Screen Design and Navigation"],
+    ["7", "Configuration"],
+    ["8", "Technical Elements and Integration"],
+    ["9", "Test Conditions"],
+    ["10", "Requirement Traceability"],
+    ["11", "Related RICEFW Items"],
+    ["12", "Risk and Vulnerability Assessment"],
+    ["13", "Open Points and Omissions"],
+    ["14", "Localization, Controls and Review" ]
+  ],
+  "required_collections": [
+    "revision_history", "sign_offs", "relevant_documents", "actors_and_systems",
+    "process_steps", "requirements", "screens", "test_conditions", "traceability", "review_checklist"
+  ],
+  "content_limits": {
+    "process_steps": 12,
+    "business_rules": 16,
+    "screens": 4,
+    "screen_fields": 8,
+    "screen_actions": 4,
+    "flow_variants": 8,
+    "improvement_mappings": 10,
+    "processing_logic": 16,
+    "configuration_items": 12,
+    "technical_objects": 12,
+    "interfaces": 10,
+    "test_conditions": 20,
+    "risks": 10,
+    "open_issues": 12
+  },
+  "branding": {
+    "left_logo": "INFRABEAT",
+    "right_logo": "CLIENT",
+    "classification_default": "INTERNAL",
+    "header_title": "SAP Functional Specification"
+  }
+}
